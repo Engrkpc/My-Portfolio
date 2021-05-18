@@ -1,0 +1,363 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	background-color: #FFF;
+	font-family: 'Poppins', sans-serif;
+}
+
+.about {
+	font-family: 'Poppins', sans-serif;
+
+}
+
+/*for main navbar---------------------*/
+.navbar{
+	background-color: crimson;
+	font-size: 1rem;
+    font-weight: 200;
+    padding-top: 3px;  
+    padding-bottom: 3px;  
+	font-family: 'Ubuntu', sans-serif;
+	
+}
+
+ .navbar .nav-item .nav-link {
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: #fff;
+}  
+
+.navbar .navbar-brand{
+ font-size:25px;
+ color: #fff;
+} 
+
+.navbar.scrolled {
+    background:#111;
+    transition: background 500ms;
+}
+
+
+/*cover------------*/
+
+#cover-container{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	background-image:url("../images/keyboard.jpg");
+	background-attachment: fixed;
+	background-size:cover;
+	height:100vh;
+	min-height: 500px;
+	color:#fff;
+    font-family: 'Ubuntu', sans-serif;
+	background-position: center;
+}
+
+.landing-name{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height:50vh;
+}
+
+.landing-row{
+	display: flex;
+	justify-content:center;
+	border:3px solid #222;
+
+}
+
+.landing-name .text-1{
+	font-size: 3.8rem;
+	color:#FFFF;
+}
+
+.landing-name .text-2{
+	font-size: 3.5rem;
+	font-weight: 500;
+	color:#FFFF;
+}
+
+/*About me section-------------------------*/
+#about p {
+	text-align: center;
+	font-size: 20px;
+}
+
+/* .about {
+	height: 50vh;
+} */
+
+.about-title {
+	margin-top:20px;
+	margin-bottom: 10px; 
+	padding-top:20px;
+	padding-bottom: 20px;
+	font-family: 'Ubunto',sans-serif;
+	font-weight: 600;
+	
+}
+
+#about img{
+	width: 330px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:auto;
+	
+}
+
+.about-text{
+	font-weight: 500;
+	font-size: 1.2rem;
+	margin:auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+@media (max-width: 1000px){
+	
+	.about-row{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#about img{
+		margin:auto;
+	}
+}
+
+
+/* Projects  */
+.projects{
+    background: #111;
+}
+
+.projects-row{
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+.projects .project-content{
+	display: flex;
+	justify-content: center;
+}
+
+.projects .project-content{
+	transform: transfrom .5s ease;
+}
+
+.projects .project-content:hover{
+	transform: scale(1.1);
+	
+}
+
+.projects .card:hover{
+	border:1px solid crimson;
+}
+
+.projects .projects-row{
+	display: flex;
+	justify-content:center;
+}
+
+.projects .card-title{
+	color:crimson;
+}
+.projects .card{
+	background-color: #222;
+}
+.projects .card-text,a {
+	color:#fff;
+}
+
+.projects a:hover{
+	color:crimson;
+}
+
+.tech-used{
+	color:#2596be;
+}
+
+/* Technologies section */
+.technologies{
+	display:flex;
+	justify-content:space-between;
+}
+.technologies-title {
+	font-family: 'Ubuntu', sans-serif;
+}
+.frontend{
+
+	padding-right: 20px;
+	width: 80%;
+
+}
+
+.backend{
+
+	margin-left:10px;
+	padding-left: 20px;
+	width: 80%;
+
+}
+
+.technologies .card-body{
+	background-color: #eee;
+}
+
+.tech-stack {
+	height: 100px;
+	margin-top: 15px;
+	background-size: contain; 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+ /* frontend */
+#html{
+	background-image:url("../images/html5.png");
+	background-size: 70%;
+}
+
+#css{
+	background-image:url("../images/css.png");
+	background-size: 70%;
+}
+
+#js{
+	background-image:url("../images/javascript.png");
+	background-size: 70%;
+	
+}
+
+#react{
+	background-image:url("../images/react.png");
+	background-size: 70%;	
+}
+
+#next{
+	background-image:url("../images/next.png");
+	background-size: 70%;	
+}
+
+#bootstrap{
+	background-image:url("../images/bootstrap.png");
+	background-size: 70%;
+}
+
+
+
+#express{
+	background-image:url("../images/express.png");
+	background-size: 70%;
+}
+
+#node{
+	background-image:url("../images/node.png");
+	background-size: 100%;
+}
+
+#mongodb{
+	background-image:url("../images/mongodb.png");
+	background-size: 100%;
+	
+}
+
+#postman{
+	background-image:url("../images/postman.png");
+	background-size: 70%;	
+}
+
+
+/*For cotact section*/
+#contact-section {
+	margin-bottom:20px;
+}
+#contact-section h3{
+	text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin-top:50px;
+	margin-bottom: 30px;
+}
+
+.first-name-div{
+	margin-right: 30px;
+}
+
+/* contact styling */
+.contact{
+	background-color:#fff;
+}
+.contact-me{
+	font-family: 'Ubuntu', sans-serif;
+}
+.contact .acount-item img{
+	width:30%;
+}
+.acount-item a{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa-user{
+	color:crimson;
+}
+
+.fa-envelope{
+	color:crimson;
+}
+
+.fa-map-marker-alt{
+	color: crimson;
+}
+
+.contact .email{
+	color:#222;
+}
+
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* Footer */
+
+footer{
+	
+    background: #111;
+	padding:15px;
+    color: #fff;
+    text-align: center;
+}
+footer p{
+	margin-bottom:0;
+}
+
+
